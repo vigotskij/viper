@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+final class MainRouter: Router {
+    var viewController: MainCleanViewControllerProtocol?
+    
+    init(viewController: MainCleanViewControllerProtocol?) {
+        self.viewController = viewController
+    }
+}
+
+extension MainRouter: MainRouterProtocol {
+    func routeToDetailView() {
+        
+    }
+}

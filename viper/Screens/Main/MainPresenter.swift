@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+final class MainPresenter: Presenter, InteractorOutput {
+    var output: MainPresenterOutput?
+    
+    init(output: MainPresenterOutput?) {
+        self.output = output
+    }
+}
+
+extension MainPresenter: MainPresenterProtocol {
+    func routeToDetailView() {
+        
+    }
+}

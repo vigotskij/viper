@@ -7,9 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 struct MainCellViewModel {
     let title: String
     let description: String
     let imageURL: URL?
+    
+    var image: UIImage? {
+        guard let url = imageURL,
+            let data = try? Data(contentsOf: url) else {
+            return nil
+        }
+        return UIImage(data: data)
+    }
 }

@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+final class MainConfigurator: Configurator {
+    func configure(viewController: CleanViewController) {
+        let router = MainRouter(viewController: viewController as? MainCleanViewControllerProtocol)
+        let presenter = MainPresenter(output: viewController as? MainPresenterOutput)
+        let interactor = MainInteractor(output: presenter as? MainInteractorOutput)
+        
+        guard let mainViewController = viewController as? MainCleanViewControllerProtocol else {
+            return
+        }
+        mainViewController.output = interactor
+        mainViewController.router = router
+        
+    }
+    
+    
+}

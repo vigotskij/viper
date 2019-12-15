@@ -7,9 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 struct DetailViewModel {
     let title: String
     let description: String
-    let imageURL: URL?ß
+    let imageURL: URL?
+    
+    var image: UIImage? {
+        guard let url = imageURL,
+            let data = try? Data(contentsOf: url) else {
+            return nil
+        }
+        return UIImage(data: data)
+    }
 }

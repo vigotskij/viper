@@ -7,3 +7,31 @@
 //
 
 import Foundation
+
+final class MainInteractor: Interactor, CleanViewControllerOutput {
+    var output: MainInteractorOutput?
+
+    init(output: MainInteractorOutput?) {
+        self.output = output
+    }
+}
+
+extension MainInteractor: MainInteractorProtocol {
+    func routeToDetailView() {
+        
+    }
+    
+    func viewDidLoad() {
+        
+    }
+    
+    func fetchData() {
+        
+    }
+    
+    func pullToRefresh() {
+        
+    }
+    
+    
+}

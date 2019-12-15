@@ -8,13 +8,25 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
+final class MainViewController: UIViewController {
+    var configurator: MainConfigurator? {
+        didSet {
+            configurator?.configure(viewController: self)
+        }
+    }
+    var output: MainInteractorProtocol?
+    var router: MainRouterProtocol?
+    
+    @IBOutlet private weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
 
+extension MainViewController: MainCleanViewControllerProtocol {
+    func routeToDetailView() {
+        
+    }
+}
