@@ -25,6 +25,10 @@
 		A1AD316E23A6884300563884 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD316D23A6884300563884 /* DetailRouter.swift */; };
 		A1AD317023A6885500563884 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD316F23A6885500563884 /* DetailViewController.swift */; };
 		A1AD317323A68C9000563884 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317223A68C9000563884 /* MainTableViewCell.swift */; };
+		A1AD317623A6910600563884 /* LaptopDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317523A6910600563884 /* LaptopDataModel.swift */; };
+		A1AD317823A6923D00563884 /* MainCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317723A6923D00563884 /* MainCellViewModel.swift */; };
+		A1AD317A23A69FFF00563884 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317923A69FFF00563884 /* DetailViewModel.swift */; };
+		A1AD317C23A6A0B100563884 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317B23A6A0B100563884 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		A1AD316D23A6884300563884 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		A1AD316F23A6885500563884 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A1AD317223A68C9000563884 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		A1AD317523A6910600563884 /* LaptopDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaptopDataModel.swift; sourceTree = "<group>"; };
+		A1AD317723A6923D00563884 /* MainCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellViewModel.swift; sourceTree = "<group>"; };
+		A1AD317923A69FFF00563884 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		A1AD317B23A6A0B100563884 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +92,6 @@
 				A1AD315923A6859500563884 /* Supporting Objects */,
 				A1AD314B23A66E6200563884 /* Info.plist */,
 				A1AD315123A6851000563884 /* Models */,
-				A1AD315823A6857600563884 /* Networking */,
 				A1AD315523A6854600563884 /* Screens */,
 				A1AD315A23A685AD00563884 /* Storyboards */,
 			);
@@ -103,6 +110,7 @@
 		A1AD315223A6852300563884 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1AD317523A6910600563884 /* LaptopDataModel.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -110,6 +118,8 @@
 		A1AD315323A6853200563884 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1AD317723A6923D00563884 /* MainCellViewModel.swift */,
+				A1AD317923A69FFF00563884 /* DetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -150,19 +160,13 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
-		A1AD315823A6857600563884 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		A1AD315923A6859500563884 /* Supporting Objects */ = {
 			isa = PBXGroup;
 			children = (
 				A1AD317423A68CC900563884 /* Networking */,
 				A1AD313D23A66E6000563884 /* AppDelegate.swift */,
 				A1AD313F23A66E6000563884 /* SceneDelegate.swift */,
+				A1AD317B23A6A0B100563884 /* Constants.swift */,
 			);
 			path = "Supporting Objects";
 			sourceTree = "<group>";
@@ -263,12 +267,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AD315E23A6874C00563884 /* MainPresenter.swift in Sources */,
+				A1AD317C23A6A0B100563884 /* Constants.swift in Sources */,
 				A1AD316A23A6882600563884 /* DetailInteractor.swift in Sources */,
 				A1AD316623A687F200563884 /* DetailConfigurator.swift in Sources */,
+				A1AD317823A6923D00563884 /* MainCellViewModel.swift in Sources */,
 				A1AD316E23A6884300563884 /* DetailRouter.swift in Sources */,
 				A1AD317323A68C9000563884 /* MainTableViewCell.swift in Sources */,
 				A1AD314223A66E6000563884 /* MainViewController.swift in Sources */,
 				A1AD313E23A66E6000563884 /* AppDelegate.swift in Sources */,
+				A1AD317623A6910600563884 /* LaptopDataModel.swift in Sources */,
+				A1AD317A23A69FFF00563884 /* DetailViewModel.swift in Sources */,
 				A1AD314023A66E6000563884 /* SceneDelegate.swift in Sources */,
 				A1AD316423A687B200563884 /* MainContracts.swift in Sources */,
 				A1AD316223A6879B00563884 /* MainConfigurator.swift in Sources */,
