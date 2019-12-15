@@ -17,8 +17,6 @@ final class MainViewController: UIViewController {
     var output: MainInteractorProtocol?
     var router: MainRouterProtocol?
     
-    @IBOutlet private weak var image: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
