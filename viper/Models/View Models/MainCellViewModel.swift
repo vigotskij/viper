@@ -21,4 +21,9 @@ struct MainCellViewModel {
         }
         return UIImage(data: data)
     }
+    init(from dataModel: LaptopDataModel) {
+        self.title = dataModel.title ?? ""
+        self.description = dataModel.description ?? ""
+        self.imageURL = dataModel.imageURL
+    }
 }

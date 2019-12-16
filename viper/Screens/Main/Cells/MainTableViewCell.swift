@@ -6,4 +6,40 @@
 //  Copyright © 2019 Boris Sortino. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MainTableViewCell: UITableViewCell {
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var thumbnailImage: UIImageView!
+    
+    var viewModel: MainCellViewModel? {
+        didSet {
+            DispatchQueue.main.async {
+                self.titleLabel.text = self.viewModel?.title
+                self.descriptionLabel.text = self.viewModel?.description
+                self.thumbnailImage.image = self.viewModel?.image
+            }
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        titleLabel.text = nil
+        descriptionLabel.text = nil
+        thumbnailImage.image = nil
+    }
+    static var reuseIdentifier: String {
+        return String(describing: self)
+    }
+}

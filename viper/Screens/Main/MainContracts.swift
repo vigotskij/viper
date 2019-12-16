@@ -22,12 +22,14 @@ protocol MainInteractorProtocol: Interactor {
 
 protocol MainPresenterProtocol: Presenter {
     var output: MainPresenterOutput? { get set }
+    func presentData(response: [MainCellViewModel])
     func routeToDetailView()
 }
 protocol MainCleanViewControllerProtocol: CleanViewController {
     var configurator: MainConfigurator? { get set }
     var output: MainInteractorProtocol? { get set }
     var router: MainRouterProtocol? { get set }
+    func updateViewModel(viewModel: [MainCellViewModel])
     func routeToDetailView()
 }
 

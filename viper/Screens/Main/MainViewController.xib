@@ -8,12 +8,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="viper" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="viper" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="k9d-iF-9Ph"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lqx-Km-y0h">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="lqx-Km-y0h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7bZ-GE-laR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lqx-Km-y0h" secondAttribute="trailing" id="RJn-in-9ee"/>
+                <constraint firstItem="lqx-Km-y0h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ukt-4n-KUE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lqx-Km-y0h" secondAttribute="bottom" id="b7o-Xj-za9"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="132" y="113.79310344827587"/>
         </view>

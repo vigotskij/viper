@@ -17,6 +17,10 @@ final class MainPresenter: Presenter, InteractorOutput {
 }
 
 extension MainPresenter: MainPresenterProtocol {
+    func presentData(response: [MainCellViewModel]) {
+        output?.updateViewModel(viewModel: response)
+    }
+    
     func routeToDetailView() {
         
     }

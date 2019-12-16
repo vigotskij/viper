@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A1AD313E23A66E6000563884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD313D23A66E6000563884 /* AppDelegate.swift */; };
-		A1AD314023A66E6000563884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD313F23A66E6000563884 /* SceneDelegate.swift */; };
 		A1AD314223A66E6000563884 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD314123A66E6000563884 /* MainViewController.swift */; };
 		A1AD314723A66E6200563884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1AD314623A66E6200563884 /* Assets.xcassets */; };
 		A1AD315C23A6872400563884 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD315B23A6872400563884 /* MainInteractor.swift */; };
@@ -22,7 +21,6 @@
 		A1AD316C23A6883500563884 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD316B23A6883500563884 /* DetailPresenter.swift */; };
 		A1AD316E23A6884300563884 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD316D23A6884300563884 /* DetailRouter.swift */; };
 		A1AD317023A6885500563884 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD316F23A6885500563884 /* DetailViewController.swift */; };
-		A1AD317323A68C9000563884 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317223A68C9000563884 /* MainTableViewCell.swift */; };
 		A1AD317623A6910600563884 /* LaptopDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317523A6910600563884 /* LaptopDataModel.swift */; };
 		A1AD317823A6923D00563884 /* MainCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317723A6923D00563884 /* MainCellViewModel.swift */; };
 		A1AD317A23A69FFF00563884 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD317923A69FFF00563884 /* DetailViewModel.swift */; };
@@ -31,12 +29,14 @@
 		A1AD318123A6A85800563884 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD318023A6A85800563884 /* Protocols.swift */; };
 		A1AD318323A6AC3B00563884 /* DetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD318223A6AC3B00563884 /* DetailDataModel.swift */; };
 		A1AD318523A6CAA100563884 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AD318423A6CAA100563884 /* MainViewController.xib */; };
+		A1AD31AC23A6EEC600563884 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD31AA23A6EEC600563884 /* MainTableViewCell.swift */; };
+		A1AD31AD23A6EEC600563884 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AD31AB23A6EEC600563884 /* MainTableViewCell.xib */; };
+		A1F8B2D823A6FB60008FBEF6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F8B2D723A6FB60008FBEF6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1AD313A23A66E6000563884 /* viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AD313D23A66E6000563884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1AD313F23A66E6000563884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A1AD314123A66E6000563884 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A1AD314623A66E6200563884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1AD314B23A66E6200563884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,7 +51,6 @@
 		A1AD316B23A6883500563884 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		A1AD316D23A6884300563884 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		A1AD316F23A6885500563884 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		A1AD317223A68C9000563884 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		A1AD317523A6910600563884 /* LaptopDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaptopDataModel.swift; sourceTree = "<group>"; };
 		A1AD317723A6923D00563884 /* MainCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellViewModel.swift; sourceTree = "<group>"; };
 		A1AD317923A69FFF00563884 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -60,6 +59,9 @@
 		A1AD318023A6A85800563884 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		A1AD318223A6AC3B00563884 /* DetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataModel.swift; sourceTree = "<group>"; };
 		A1AD318423A6CAA100563884 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		A1AD31AA23A6EEC600563884 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		A1AD31AB23A6EEC600563884 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		A1F8B2D723A6FB60008FBEF6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		A1AD313123A66E6000563884 = {
 			isa = PBXGroup;
 			children = (
+				A1F8B2D723A6FB60008FBEF6 /* Default-568h@2x.png */,
 				A1AD313C23A66E6000563884 /* viper */,
 				A1AD313B23A66E6000563884 /* Products */,
 			);
@@ -171,7 +174,6 @@
 			children = (
 				A1AD317423A68CC900563884 /* Networking */,
 				A1AD313D23A66E6000563884 /* AppDelegate.swift */,
-				A1AD313F23A66E6000563884 /* SceneDelegate.swift */,
 				A1AD317B23A6A0B100563884 /* Constants.swift */,
 			);
 			path = "Supporting Objects";
@@ -180,7 +182,8 @@
 		A1AD317123A68AFE00563884 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A1AD317223A68C9000563884 /* MainTableViewCell.swift */,
+				A1AD31AA23A6EEC600563884 /* MainTableViewCell.swift */,
+				A1AD31AB23A6EEC600563884 /* MainTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -259,6 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AD31AD23A6EEC600563884 /* MainTableViewCell.xib in Resources */,
+				A1F8B2D823A6FB60008FBEF6 /* Default-568h@2x.png in Resources */,
 				A1AD318523A6CAA100563884 /* MainViewController.xib in Resources */,
 				A1AD314723A66E6200563884 /* Assets.xcassets in Resources */,
 			);
@@ -271,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AD31AC23A6EEC600563884 /* MainTableViewCell.swift in Sources */,
 				A1AD315E23A6874C00563884 /* MainPresenter.swift in Sources */,
 				A1AD317C23A6A0B100563884 /* Constants.swift in Sources */,
 				A1AD318323A6AC3B00563884 /* DetailDataModel.swift in Sources */,
@@ -279,13 +285,11 @@
 				A1AD316623A687F200563884 /* DetailConfigurator.swift in Sources */,
 				A1AD317823A6923D00563884 /* MainCellViewModel.swift in Sources */,
 				A1AD316E23A6884300563884 /* DetailRouter.swift in Sources */,
-				A1AD317323A68C9000563884 /* MainTableViewCell.swift in Sources */,
 				A1AD314223A66E6000563884 /* MainViewController.swift in Sources */,
 				A1AD318123A6A85800563884 /* Protocols.swift in Sources */,
 				A1AD313E23A66E6000563884 /* AppDelegate.swift in Sources */,
 				A1AD317623A6910600563884 /* LaptopDataModel.swift in Sources */,
 				A1AD317A23A69FFF00563884 /* DetailViewModel.swift in Sources */,
-				A1AD314023A66E6000563884 /* SceneDelegate.swift in Sources */,
 				A1AD316423A687B200563884 /* MainContracts.swift in Sources */,
 				A1AD316223A6879B00563884 /* MainConfigurator.swift in Sources */,
 				A1AD315C23A6872400563884 /* MainInteractor.swift in Sources */,
