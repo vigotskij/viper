@@ -16,7 +16,7 @@ final class MainPresenter: Presenter, InteractorOutput {
     }
 }
 
-extension MainPresenter: MainPresenterProtocol {
+extension MainPresenter: MainInteractorOutput {
     func presentData(response: [MainCellViewModel]) {
         output?.updateViewModel(viewModel: response)
     }
@@ -25,4 +25,3 @@ extension MainPresenter: MainPresenterProtocol {
         
     }
 }
-extension MainPresenter: MainInteractorOutput {}

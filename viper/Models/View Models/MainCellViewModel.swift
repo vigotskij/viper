@@ -10,27 +10,29 @@ import Foundation
 import UIKit
 
 struct MainCellViewModel {
-    struct ViewModel {
     let title: String
     let description: String
     let imageURL: URL?
-    
+    let compressedImage: UIImage?
     var image: UIImage? {
         guard let url = imageURL,
             let data = try? Data(contentsOf: url),
-            let image = UIImage(data: data),
-            let compressedImageData = UIImageJPEGRepresentation(image, 0) else {
-            return nil
+            let image = UIImage(data: data) else {
+                return nil
         }
-        return UIImage(data: compressedImageData)
+        return image
     }
     init(from dataModel: LaptopDataModel) {
         self.title = dataModel.title ?? ""
         self.description = dataModel.description ?? ""
         self.imageURL = dataModel.imageURL
-    }
-}
-    struct response {
-        
+        guard let url = imageURL,
+            let data = try? Data(contentsOf: url),
+            let image = UIImage(data: data),
+            let compressedImageData = UIImageJPEGRepresentation(image, 0) else {
+                compressedImage = nil
+                return
+        }
+        compressedImage = UIImage(data: compressedImageData)
     }
 }

@@ -17,7 +17,7 @@ class MainTableViewCell: UITableViewCell {
         didSet {
             titleLabel.text = self.viewModel?.title
             descriptionLabel.text = self.viewModel?.description
-            thumbnailImage.image = self.viewModel?.image
+            thumbnailImage.image = self.viewModel?.compressedImage
         }
     }
     
