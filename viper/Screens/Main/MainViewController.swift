@@ -43,8 +43,8 @@ extension MainViewController: MainCleanViewControllerProtocol, MainPresenterOutp
         self.viewModel = viewModel
     }
     
-    func routeToDetailView() {
-        
+    func routeToDetailView(with model: MainCellViewModel) {
+        router?.routeToDetailView(with: model)
     }
 }
 
@@ -64,7 +64,10 @@ extension MainViewController: UITableViewDataSource {
 }
 
 extension MainViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedRow = viewModel[indexPath.row]
+        output?.routeToDetailView(with: selectedRow)
+    }
 }
 
 private extension MainViewController {

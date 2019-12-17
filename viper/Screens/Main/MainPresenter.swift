@@ -21,7 +21,7 @@ extension MainPresenter: MainInteractorOutput {
         output?.updateViewModel(viewModel: response)
     }
     
-    func routeToDetailView() {
+    func routeToDetailView(with model: MainCellViewModel) {
         
     }
 }

@@ -18,7 +18,7 @@ final class MainInteractor: Interactor, CleanViewControllerOutput {
 }
 
 extension MainInteractor: MainInteractorProtocol {
-    func routeToDetailView() {
+    func routeToDetailView(with model: MainCellViewModel) {
         
     }
     
