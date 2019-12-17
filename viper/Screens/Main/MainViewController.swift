@@ -16,7 +16,15 @@ final class MainViewController: UIViewController {
     }
     var output: MainInteractorProtocol?
     var router: MainRouterProtocol?
-    @IBOutlet private weak var tableView: UITableView?
+    @IBOutlet private weak var tableView: UITableView? {
+        didSet {
+            tableView?.delegate = self
+            tableView?.dataSource = self
+            tableView?.register(UINib(nibName: String(describing: MainTableViewCell.self),
+                                      bundle: nil),
+                                forCellReuseIdentifier: String(describing: MainTableViewCell.self))
+        }
+    }
     
     var viewModel: [MainCellViewModel] = [] {
         didSet {
@@ -27,13 +35,10 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         output?.viewDidLoad()
-        tableView?.delegate = self
-        tableView?.dataSource = self
-        tableView?.reloadData()
     }
 }
 
-extension MainViewController: MainCleanViewControllerProtocol {
+extension MainViewController: MainCleanViewControllerProtocol, MainPresenterOutput {
     func updateViewModel(viewModel: [MainCellViewModel]) {
         self.viewModel = viewModel
     }
@@ -49,7 +54,8 @@ extension MainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.reuseIdentifier, for: indexPath) as? MainTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MainTableViewCell.self),
+                                                       for: indexPath) as? MainTableViewCell else {
             return UITableViewCell()
         }
         cell.viewModel = self.viewModel[indexPath.row]
@@ -63,6 +69,8 @@ extension MainViewController: UITableViewDelegate {
 
 private extension MainViewController {
     func updateUI() {
-        tableView?.reloadData()
+        DispatchQueue.main.async {
+            self.tableView?.reloadData()
+        }
     }
 }

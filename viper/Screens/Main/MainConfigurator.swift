@@ -12,7 +12,7 @@ final class MainConfigurator: Configurator {
     func configure(viewController: CleanViewController) {
         let router = MainRouter(viewController: viewController as? MainCleanViewControllerProtocol)
         let presenter = MainPresenter(output: viewController as? MainPresenterOutput)
-        let interactor = MainInteractor(output: presenter as? MainInteractorOutput)
+        let interactor = MainInteractor(output: presenter)
         
         guard let mainViewController = viewController as? MainCleanViewControllerProtocol else {
             return

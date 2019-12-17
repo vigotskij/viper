@@ -25,3 +25,4 @@ extension MainPresenter: MainPresenterProtocol {
         
     }
 }
+extension MainPresenter: MainInteractorOutput {}

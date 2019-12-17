@@ -15,11 +15,9 @@ class MainTableViewCell: UITableViewCell {
     
     var viewModel: MainCellViewModel? {
         didSet {
-            DispatchQueue.main.async {
-                self.titleLabel.text = self.viewModel?.title
-                self.descriptionLabel.text = self.viewModel?.description
-                self.thumbnailImage.image = self.viewModel?.image
-            }
+            titleLabel.text = self.viewModel?.title
+            descriptionLabel.text = self.viewModel?.description
+            thumbnailImage.image = self.viewModel?.image
         }
     }
     
@@ -33,12 +31,12 @@ class MainTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        titleLabel.text = nil
-        descriptionLabel.text = nil
-        thumbnailImage.image = nil
-    }
+//    override func prepareForReuse() {
+//        super.prepareForReuse()
+//        titleLabel.text = nil
+//        descriptionLabel.text = nil
+//        thumbnailImage.image = nil
+//    }
     static var reuseIdentifier: String {
         return String(describing: self)
     }
